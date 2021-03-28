@@ -1,0 +1,27 @@
+<center>
+{% extends 'base.html' %}
+{% block body %}
+<form method="POST" class="post-form" action="/home/">  
+    {% csrf_token %}
+    <div>
+         <a href="/"><b>Signup</b></a><br><br>
+    </div>
+    <div>
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" required="required"/>
+        </div><br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" required="required"/>
+        </div>
+        <center><label class="text-danger">{{ msg }}</label></center>
+        <br />
+        <div>
+            <button> Login</button>
+        </div>
+    </div>
+</form>
+ 
+{% endblock %}
+</center>
