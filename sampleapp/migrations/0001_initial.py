@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('firstname', models.CharField(max_length=30)),
                 ('lastname', models.CharField(max_length=30)),
                 ('username', models.CharField(max_length=30)),
-                ('password', models.CharField(max_length=12)),
+                ('password', models.CharField(max_length=120)),
             ],
             options={
                 'db_table': 'user_destination',
